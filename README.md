@@ -1,11 +1,11 @@
 # Pricing Card
 
-<img src="https://shots.codepen.io/username/pen/GRgamLM-512.webp?version=1580295855" alt="cover"/>
 This repository contains the code for a simple pricing card created using HTML and CSS. You can use this pricing card to showcase different pricing plans for your products or services on your website or web application.
 
 ## Preview
 
 <a href="https://pricing-card-ashy.vercel.app/">Preview</a>
+<img src="https://shots.codepen.io/username/pen/GRgamLM-512.webp?version=1580295855" alt="cover"/>
 
 ## Usage
 
