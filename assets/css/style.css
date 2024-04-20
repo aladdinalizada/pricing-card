@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  list-style-type: none;
+}
+
+body {
+  background-color: #dff9fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+:root {
+  --green: #6ab04c;
+  --true: #6ab04c;
+  --false: #eb4d4b;
+}
+
+.fa-check-circle {
+  color: var(--true);
+}
+.fa-times-circle {
+  color: var(--false);
+}
+/* TITLE */
+
+.title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Pricing */
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.pricing .plan {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pricing .plan:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
+
+.pricing .plan h2 {
+  font-size: 22px;
+}
+.pricing .plan .price {
+  font-size: 30px;
+}
+.pricing .plan .features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+.pricing .plan .features li {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.pricing button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.plan.popular span {
+  position: absolute;
+  width: max-content;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6ab04c;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.plan.popular {
+  border: 2px solid #6ab04c;
+  position: relative;
+  transform: scale(1.08);
+}
+
+.plan.popular:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .pricing .plan {
+    width: 100%;
+  }
+}
